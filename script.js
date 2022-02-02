@@ -7,13 +7,51 @@ var images = new Array(
   "images/istockphoto-1284379612-170667a.jpg"
 );
 
+var mobileimages=new Array(
+  "images/mobile1.jpg",
+  "images/mobile2.jpg",
+  "images/mobile3.jpg"
+)
+
 var len = images.length;
-var i = 0;
+var lenmobile = mobileimages.length;
+var i = 0,j=0;
 function slider() {
   if (i > len - 1) {
     i = 0;
   }
   slideImg.src = images[i];
   i++;
+  if (window.outerWidth < 900) {
+    return;
+  }
+  
   setTimeout("slider()", 3000);
+}
+let initialload = false;
+if (initialload == false) {
+  slider();
+  initialload = true;
+}
+console.log(window);
+
+if (window.outerWidth > 900) {
+  slider();
+}
+if (window.outerWidth <480) {
+  mobileimages();
+}
+
+
+function sliderphone() {
+  if (j > lenmobile - 1) {
+    j = 0;
+  }
+  slideImg.src = mobileimages[i];
+  i++;
+  if (window.outerWidth > 900) {
+    return;
+  }
+  
+  setTimeout("sliderphone()", 3000);
 }
