@@ -13,7 +13,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  animation: zoom 3s linear infinite;
+  animation: zoom 6s linear infinite;
 }
 
 @keyframes zoom {

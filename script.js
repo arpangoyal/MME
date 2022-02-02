@@ -42,7 +42,7 @@ function slider() {
     return;
   }
 
-  setTimeout("slider()", 3000);
+  setTimeout("slider()", 6000);
 }
 let initialload = false;
 if (initialload == false) {
