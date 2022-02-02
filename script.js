@@ -58,7 +58,7 @@ if (window.outerWidth > 900) {
   ham1[0].classList.add("display");
   
 }
-if (window.outerWidth <600) {
+if (window.outerWidth <900) {
   navbarmenu[0].classList.add("display");
   sliderphone();
 }
