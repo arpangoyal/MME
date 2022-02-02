@@ -1,4 +1,22 @@
 var slideImg = document.getElementById("slideImg");
+let hamber=document.querySelector(".hamber");
+let menulist=document.getElementsByClassName("menu-list");
+let navbarmenu=document.getElementsByClassName("navbar-menu");
+let ham1=document.getElementsByClassName("hamber");
+
+console.log(navbarmenu);
+hamber.addEventListener("click",(e)=>{
+  let length=menulist[0].classList.length;
+  if(length==1){
+
+    menulist[0].classList.add("display");
+  }else{
+    menulist[0].classList.remove("display");
+
+  }
+  
+})
+
 var images = new Array(
   "images/cover660_012319124503.jpg",
   "images/gettyimages-1012190542-640x640.jpg",
@@ -37,12 +55,13 @@ console.log(window);
 
 if (window.outerWidth > 900) {
   slider();
+  ham1[0].classList.add("display");
+  
 }
 if (window.outerWidth <600) {
-  
+  navbarmenu[0].classList.add("display");
   sliderphone();
 }
-alert(window.outerWidth );
 
 function sliderphone() {
   if (j > lenmobile - 1) {

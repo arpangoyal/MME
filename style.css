@@ -50,9 +50,10 @@ body {
   height: 15vh;
   background: #d2f3b3;
   position: fixed;
-  z-index: 4;
+  z-index: 5;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .logo {
   height: 100%;
@@ -94,15 +95,75 @@ body {
   font-size: 40px;
 }
 
-.initiatives{
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-    overflow-x: hidden;
+.initiatives {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  overflow-x: hidden;
 }
-.details{
-    height: 200vh;
-    width: 100vw;
-    background-color: brown;
-    overflow-x: hidden;
+.details {
+  height: 200vh;
+  width: 100vw;
+  background-color: brown;
+  overflow-x: hidden;
+}
+
+.menu-list {
+  position: fixed;
+  top: 15vh;
+  z-index: 4;
+  /* outline: none; */
+  /* list-style: none; */
+  width: 100vw;
+  background-color: beige;
+  animation: slow 1s linear 1;
+}
+.hamber {
+  font-size: 40px;
+  color: darkgreen;
+  width: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  
+}
+
+@keyframes slow {
+  0% {
+    top:5vh;
+  }
+  25% {
+    top: 8vh;
+  }
+  50% {
+      top: 13vh;
+  }
+  100% {
+      top: 15vh;
+  }
+}
+.navbar-nav {
+  /* padding-left: 30px; */
+  padding: 0px 31px 0px 31px;
+}
+.nav-item {
+  list-style: none;
+  border-bottom: 2px solid darkgreen;
+  display: block;
+  text-align: center;
+  font-size: 19px;
+  padding: 4px;
+}
+.nav-item a {
+  text-decoration: none;
+}
+
+.hamber :hover {
+  background-color: coral;
+  padding: 10px;
+  border-radius: 5px;
+}
+.display {
+  display: none;
 }
