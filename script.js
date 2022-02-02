@@ -1,21 +1,18 @@
 var slideImg = document.getElementById("slideImg");
-let hamber=document.querySelector(".hamber");
-let menulist=document.getElementsByClassName("menu-list");
-let navbarmenu=document.getElementsByClassName("navbar-menu");
-let ham1=document.getElementsByClassName("hamber");
+let hamber = document.querySelector(".hamber");
+let menulist = document.getElementsByClassName("menu-list");
+let navbarmenu = document.getElementsByClassName("navbar-menu");
+let ham1 = document.getElementsByClassName("hamber");
 
 console.log(navbarmenu);
-hamber.addEventListener("click",(e)=>{
-  let length=menulist[0].classList.length;
-  if(length==1){
-
+hamber.addEventListener("click", (e) => {
+  let length = menulist[0].classList.length;
+  if (length == 1) {
     menulist[0].classList.add("display");
-  }else{
+  } else {
     menulist[0].classList.remove("display");
-
   }
-  
-})
+});
 
 var images = new Array(
   "images/cover660_012319124503.jpg",
@@ -25,7 +22,7 @@ var images = new Array(
   "images/istockphoto-1284379612-170667a.jpg"
 );
 
-var mobileimages=new Array(
+var mobileimages = new Array(
   "images/mobile1.jpg",
   "images/mobile2.jpeg",
   "images/mobile3.jpeg"
@@ -33,7 +30,8 @@ var mobileimages=new Array(
 
 var len = images.length;
 var lenmobile = mobileimages.length;
-var i = 0,j=0;
+var i = 0,
+  j = 0;
 function slider() {
   if (i > len - 1) {
     i = 0;
@@ -43,7 +41,7 @@ function slider() {
   if (window.outerWidth < 900) {
     return;
   }
-  
+
   setTimeout("slider()", 3000);
 }
 let initialload = false;
@@ -56,9 +54,8 @@ console.log(window);
 if (window.outerWidth > 900) {
   slider();
   ham1[0].classList.add("display");
-  
 }
-if (window.outerWidth <900) {
+if (window.outerWidth <= 900) {
   navbarmenu[0].classList.add("display");
   sliderphone();
 }
@@ -72,6 +69,6 @@ function sliderphone() {
   if (window.outerWidth > 900) {
     return;
   }
-  
+
   setTimeout("sliderphone()", 3000);
 }
