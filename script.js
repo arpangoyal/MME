@@ -9,9 +9,9 @@ var images = new Array(
 
 var mobileimages=new Array(
   "images/mobile1.jpg",
-  "images/mobile2.jpg",
-  "images/mobile3.jpg"
-)
+  "images/mobile2.jpeg",
+  "images/mobile3.jpeg"
+);
 
 var len = images.length;
 var lenmobile = mobileimages.length;
@@ -47,8 +47,8 @@ function sliderphone() {
   if (j > lenmobile - 1) {
     j = 0;
   }
-  slideImg.src = mobileimages[i];
-  i++;
+  slideImg.src = mobileimages[j];
+  j++;
   if (window.outerWidth > 900) {
     return;
   }
