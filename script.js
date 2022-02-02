@@ -39,9 +39,10 @@ if (window.outerWidth > 900) {
   slider();
 }
 if (window.outerWidth <480) {
+  
   sliderphone();
 }
-
+alert(window.outerWidth );
 
 function sliderphone() {
   if (j > lenmobile - 1) {
