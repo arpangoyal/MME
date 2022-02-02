@@ -38,7 +38,7 @@ console.log(window);
 if (window.outerWidth > 900) {
   slider();
 }
-if (window.outerWidth <480) {
+if (window.outerWidth <600) {
   
   sliderphone();
 }
