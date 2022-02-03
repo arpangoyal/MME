@@ -1,7 +1,13 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  font-family: 'Mukta', sans-serif;
+
 }
 .banner {
   height: 100vh;
@@ -81,18 +87,23 @@ body {
   z-index: 3;
   position: absolute;
   top: 26vh;
-  width: 48%;
-  left: 9vw;
-  display: flex;
+  /* width: 90vw; */
+  /* left: 9vw; */
+  display: block;
   flex-direction: column;
+  margin: auto;
+  padding: 16px;
 }
 .head1 {
   color: yellowgreen;
-  font-size: 70px;
+  font-size: 441%;
+  text-align: center;
 }
 .head2 {
   color: azure;
-  font-size: 40px;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 10%;
 }
 
 .initiatives {
@@ -104,7 +115,9 @@ body {
 .details {
   height: 200vh;
   width: 100vw;
-  background-color: brown;
+  background-image: url("images/wp3708762-farmers-wallpapers.jpg");
+  background-size: cover;
+  /* opacity: 0.8; */
   overflow-x: hidden;
 }
 
@@ -114,9 +127,10 @@ body {
   z-index: 4;
   /* outline: none; */
   /* list-style: none; */
-  width: 100vw;
+  width: 24vw;
   background-color: beige;
   animation: slow 1s linear 1;
+  height: 85vh;
 }
 .hamber {
   font-size: 40px;
@@ -131,16 +145,16 @@ body {
 
 @keyframes slow {
   0% {
-    top:5vh;
+    width:6vw;
   }
   25% {
-    top: 8vh;
+    width:12vw;
   }
   50% {
-      top: 13vh;
+    width:18vw;
   }
   100% {
-      top: 15vh;
+    width:24vw;
   }
 }
 .navbar-nav {
@@ -160,10 +174,76 @@ body {
 }
 
 .hamber :hover {
-  background-color: coral;
+  color: darkgreen;
   padding: 10px;
   border-radius: 5px;
 }
+
 .display {
   display: none;
+  
+}
+
+.close_animate{
+  
+  animation: close 1s linear 0.7;
+}
+
+@keyframes close {
+  0% {
+    width:24vw;
+  }
+  25% {
+    width:16vw;
+  }
+  50% {
+    width:8vw;
+  }
+  100% {
+    width:0vw;
+    /* display: none; */
+  }
+}
+
+.hembarger{height: 100%;}
+.logo_image{height: 30%;}
+.logo_image img{
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-nav li{
+  font-size: x-large;
+  margin-top: 20px;
+}
+.cross i{position: relative;/* right: -11px; */left: 10px;font-size: x-large;}
+
+.cross{
+  position: relative;
+  height: 7%;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

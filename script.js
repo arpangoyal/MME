@@ -3,15 +3,14 @@ let hamber = document.querySelector(".hamber");
 let menulist = document.getElementsByClassName("menu-list");
 let navbarmenu = document.getElementsByClassName("navbar-menu");
 let ham1 = document.getElementsByClassName("hamber");
+let close = document.querySelector(".hembarger");
 
 console.log(navbarmenu);
 hamber.addEventListener("click", (e) => {
-  let length = menulist[0].classList.length;
-  if (length == 1) {
-    menulist[0].classList.add("display");
-  } else {
+  
     menulist[0].classList.remove("display");
-  }
+    menulist[0].classList.remove("close_animate");
+
 });
 
 var images = new Array(
@@ -72,3 +71,11 @@ function sliderphone() {
 
   setTimeout("sliderphone()", 3000);
 }
+
+close.addEventListener("click", (e) => {
+  menulist[0].classList.add("close_animate");
+  setTimeout(()=>{
+    menulist[0].classList.add("display");
+
+  },700);
+});
