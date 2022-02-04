@@ -45,16 +45,18 @@ body {
 .overlay {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
   position: absolute;
-  top: 0px;
+  top: 1px;
 }
 
 .navbar {
   top: 0px;
   width: 100vw;
   height: 15vh;
-  background: #d2f3b3;
+  background: #F7F5DD;
+  /* background: linear-gradient(#519259,#d2f3b3  ); */
+
   position: fixed;
   z-index: 5;
   display: flex;
@@ -82,7 +84,14 @@ body {
   font-family: system-ui;
   font-size: 24px;
 }
-
+.menu a{
+  text-decoration: none;
+    color: #1225b3d4;
+}
+.menu a:hover{
+  text-decoration: none;
+    color: green;
+}
 .headline {
   z-index: 3;
   position: absolute;
@@ -128,8 +137,8 @@ body {
   /* outline: none; */
   /* list-style: none; */
   width: 24vw;
-  background-color: beige;
-  animation: slow 1s linear 1;
+  background-color: #519259;
+  animation: slow 0.5s linear 1;
   height: 85vh;
 }
 .hamber {
@@ -145,13 +154,13 @@ body {
 
 @keyframes slow {
   0% {
-    width:6vw;
+    width:0vw;
   }
   25% {
-    width:12vw;
+    width:8vw;
   }
   50% {
-    width:18vw;
+    width:16vw;
   }
   100% {
     width:24vw;
@@ -225,25 +234,3 @@ body {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}

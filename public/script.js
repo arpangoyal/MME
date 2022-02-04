@@ -5,7 +5,6 @@ let navbarmenu = document.getElementsByClassName("navbar-menu");
 let ham1 = document.getElementsByClassName("hamber");
 let close = document.querySelector(".hembarger");
 
-console.log(navbarmenu);
 hamber.addEventListener("click", (e) => {
   
     menulist[0].classList.remove("display");
